@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:backgroundTint="#FFFFFF"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:background="#3F51B5"
+        android:text="@string/inicio_de_secsion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="80dp"
+        android:shadowColor="@color/black"
+        android:text="@string/name"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtxname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="47dp"
+        android:layout_toEndOf="@id/name"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        android:labelFor="@id/name"
+        android:minHeight="48dp"
+        android:text="@string/txtname"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="173dp"
+        android:text="@string/password"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="361dp"
+        android:text="@string/ingresar" />
+</RelativeLayout>
